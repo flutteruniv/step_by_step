@@ -28,5 +28,11 @@ void main() {
       ]),
       true,
     );
+    final input2 = [15, 30, 45, 60, 75, 90, 105];
+    final output2 = stepMapMethod.fizzbuzz(input2);
+    expect(
+      listEquals(output2, List.generate(7, (index) => 'Fizz Buzz')),
+      true,
+    );
   });
 }
